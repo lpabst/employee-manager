@@ -10,7 +10,7 @@ export default class EmployeeList extends Component{
                     return (
                         <li className="listText" 
                         key={employee.id} 
-                        onClick={ () => { this.props.selectEmployee(employee) }}
+                        onClick={ () => { this.props.selectEmployee(employee) } }
                         > { employee.name } </li>
                     )
                     })

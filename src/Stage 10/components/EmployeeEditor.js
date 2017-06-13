@@ -8,6 +8,10 @@ export default class EmployeeEditor extends Component{
             originalEmployee: null,
             notModified: true
         }
+
+        this.save = this.save.bind(this);
+        this.cancel = this.cancel.bind(this);
+        this.handleChange = this.handleChange.bind(this);
     }
 
     componentWillReceiveProps(props){
@@ -46,7 +50,6 @@ export default class EmployeeEditor extends Component{
     render(){
         return (
             <div className="infoCard">
-                {this.props.selected.id}
                 { 
                 this.state.employee
                 ? 
